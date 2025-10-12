@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLA | Sentinel-X Academy EduTools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to-br, #f0f2f5, #d0f0f0, #c0f7f7);
+      color: #0d1b2a;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .fade-up {
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      border-bottom: 3px solid #0ea5a4;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo/logo.png" alt="Sentinel-X logo" class="w-10 h-10 rounded-md object-cover shadow-sm animate-bounce">
+        <div>
+          <span class="font-semibold text-lg flex items-center gap-1">Sentinel-X <i data-lucide="rocket" class="w-4 h-4 text-teal-600"></i></span>
+          <div class="text-sm text-gray-500">Academy · EduTools</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
+        <a href="index.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i> Home</a>
+        <a href="documentation.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="book-open" class="w-4 h-4"></i> Docs</a>
+        <a href="registrations.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="edit-3" class="w-4 h-4"></i> Register</a>
+        <a href="subscription-billing.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="credit-card" class="w-4 h-4"></i> Billing</a>
+        <a href="ethics-and-fairuse.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="scale" class="w-4 h-4"></i> Ethics</a>
+        <a href="SLA.html" class="text-teal-600 font-semibold flex items-center gap-1"><i data-lucide="shield" class="w-4 h-4"></i> SLA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-16">
+
+    <!-- HERO -->
+    <section class="text-center fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold flex justify-center items-center gap-2">
+        <i data-lucide="shield" class="w-6 h-6 text-teal-600"></i> Service Level Agreement (SLA) 🛡️
+      </h1>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        This SLA outlines the service commitments, responsibilities, and guarantees provided by Sentinel-X Academy EduTools to all users, including institutions, beta testers, and premium subscribers.
+      </p>
+    </section>
+
+    <!-- SLA CONTENT -->
+    <section class="mt-16 space-y-10 fade-up">
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="clock" class="w-5 h-5 text-teal-500"></i> 1. Service Availability</h2>
+        <p class="mt-2 text-gray-700">
+          Sentinel-X EduTools guarantees 99.5% uptime for the platform during normal operating hours. Scheduled maintenance will be announced at least 48 hours in advance.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="activity" class="w-5 h-5 text-teal-500"></i> 2. Support Response Times</h2>
+        <ul class="mt-2 list-disc list-inside text-gray-700 space-y-1">
+          <li>Critical issues: Response within 2 hours during working hours.</li>
+          <li>High-priority issues: Response within 4 hours.</li>
+          <li>Normal requests: Response within 24 hours.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="settings" class="w-5 h-5 text-teal-500"></i> 3. Maintenance & Updates</h2>
+        <p class="mt-2 text-gray-700">
+          Platform updates, feature releases, and bug fixes will be performed periodically. Minor updates may occur without notice; major updates will have scheduled notifications.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="shield" class="w-5 h-5 text-teal-500"></i> 4. Security & Data Protection</h2>
+        <p class="mt-2 text-gray-700">
+          All data is encrypted in transit and at rest. Users are responsible for maintaining the confidentiality of their login credentials. Sentinel-X adheres to strict privacy and data protection policies.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="alert-circle" class="w-5 h-5 text-teal-500"></i> 5. Exceptions & Limitations</h2>
+        <p class="mt-2 text-gray-700">
+          The SLA does not cover disruptions caused by: network outages outside our control, user-end technical issues, or unauthorized modifications to the platform.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-teal-500"></i> 6. Remedies</h2>
+        <p class="mt-2 text-gray-700">
+          In case of SLA breach, affected users may be eligible for service credits, prorated subscription adjustments, or additional support hours at the discretion of Sentinel-X.
+        </p>
+      </div>
+
+    </section>
+
+    <footer class="mt-20 text-sm text-gray-600 border-t pt-6 text-center fade-up">
+      © 2025 Sentinel-X Academy · EduTools. All rights reserved. 🚀
+    </footer>
+
+  </main>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

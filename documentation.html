@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation | Sentinel-X Academy EduTools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to-br, #f0f2f5, #d0f0f0, #c0f7f7);
+      color: #0d1b2a;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .fade-up {
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      border-bottom: 3px solid #0ea5a4;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo/logo.png" alt="Sentinel-X logo" class="w-10 h-10 rounded-md object-cover shadow-sm animate-bounce">
+        <div>
+          <span class="font-semibold text-lg flex items-center gap-1">Sentinel-X <i data-lucide="rocket" class="w-4 h-4 text-teal-600"></i></span>
+          <div class="text-sm text-gray-500">Academy · EduTools</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
+        <a href="index.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i> Home</a>
+        <a href="documentation.html" class="text-teal-600 font-semibold flex items-center gap-1"><i data-lucide="book-open" class="w-4 h-4"></i> Docs</a>
+        <a href="registrations.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="edit-3" class="w-4 h-4"></i> Register</a>
+        <a href="subscription-billing.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="credit-card" class="w-4 h-4"></i> Billing</a>
+        <a href="ethics-and-fairuse.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="scale" class="w-4 h-4"></i> Ethics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-16">
+
+    <!-- HERO SECTION -->
+    <section class="text-center fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold flex justify-center items-center gap-2">
+        <i data-lucide="book-open" class="w-6 h-6 text-teal-600"></i> Sentinel-X Documentation 📚
+      </h1>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Explore detailed guides, tutorials, and technical references for all Sentinel-X EduTools modules.  
+        Designed to help learners, educators, and administrators maximize their experience.
+      </p>
+    </section>
+
+    <!-- DOCUMENTATION CARDS -->
+    <section class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 fade-up">
+      <div class="card">
+        <h2 class="font-semibold flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-teal-500"></i> Getting Started</h2>
+        <p class="mt-2 text-gray-700">Step-by-step onboarding guide for first-time users, including installation, login, and navigation tips.</p>
+      </div>
+
+      <div class="card">
+        <h2 class="font-semibold flex items-center gap-2"><i data-lucide="settings" class="w-5 h-5 text-teal-500"></i> Settings & Customization</h2>
+        <p class="mt-2 text-gray-700">Learn how to configure your account, modules, and personal dashboard preferences for optimal workflow.</p>
+      </div>
+
+      <div class="card">
+        <h2 class="font-semibold flex items-center gap-2"><i data-lucide="server" class="w-5 h-5 text-teal-500"></i> Server & Infrastructure</h2>
+        <p class="mt-2 text-gray-700">Technical documentation for administrators including server setup, cloud integration, and backup procedures.</p>
+      </div>
+
+      <div class="card">
+        <h2 class="font-semibold flex items-center gap-2"><i data-lucide="book" class="w-5 h-5 text-teal-500"></i> Learning Modules</h2>
+        <p class="mt-2 text-gray-700">Detailed descriptions of each learning module, curricula, and assessments available in Sentinel-X EduTools.</p>
+      </div>
+
+      <div class="card">
+        <h2 class="font-semibold flex items-center gap-2"><i data-lucide="lock" class="w-5 h-5 text-teal-500"></i> Security & Privacy</h2>
+        <p class="mt-2 text-gray-700">Guidelines on data protection, ethical handling, and privacy best practices for users and administrators.</p>
+      </div>
+
+      <div class="card">
+        <h2 class="font-semibold flex items-center gap-2"><i data-lucide="zap" class="w-5 h-5 text-teal-500"></i> Tips & Shortcuts</h2>
+        <p class="mt-2 text-gray-700">Quick tips, keyboard shortcuts, and workflow tricks to boost productivity in the EduTools platform.</p>
+      </div>
+    </section>
+
+    <footer class="mt-20 text-sm text-gray-600 border-t pt-6 text-center fade-up">
+      © 2025 Sentinel-X Academy · EduTools. All rights reserved. 🚀
+    </footer>
+  </main>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

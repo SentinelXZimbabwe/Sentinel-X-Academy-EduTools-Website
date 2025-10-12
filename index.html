@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sentinel-X Academy — EduTools</title>
+  <meta name="description" content="Sentinel-X Academy EduTools — documentation, updates, registrations and subscription management for Sentinel-X educational modules." />
+  <meta name="theme-color" content="#0f172a" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root{--brand:#0ea5a4;--bg:#f8fafc;--muted:#64748b}
+    html,body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+    .card{box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .fade-up{animation:fadeUp 0.8s ease forwards;opacity:0}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-teal-50 to-cyan-50 text-slate-900 leading-relaxed overflow-x-hidden">
+  
+  <!-- HEADER -->
+  <header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="logo/logo.png" alt="Sentinel-X logo" class="w-10 h-10 rounded-md object-cover shadow-sm animate-bounce">
+        <div>
+          <span class="font-semibold text-lg flex items-center gap-1">Sentinel-X <i data-lucide="rocket" class="w-4 h-4 text-teal-600"></i></span>
+          <div class="text-sm text-gray-500">Academy · EduTools</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
+        <a href="documentation.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="book-open" class="w-4 h-4"></i> Docs</a>
+        <a href="registrations.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="edit-3" class="w-4 h-4"></i> Register</a>
+        <a href="subscription-billing.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="credit-card" class="w-4 h-4"></i> Billing</a>
+        <a href="SLA.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="shield" class="w-4 h-4"></i> SLA</a>
+        <a href="EULA.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="file-text" class="w-4 h-4"></i> EULA</a>
+        <a href="ethics-and-fairuse.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="scale" class="w-4 h-4"></i> Ethics</a>
+        <button onclick="window.location.href='https://sentinelxzimbabwe.github.io/Full-STEM-Package/'" class="ml-2 px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-md text-sm flex items-center gap-1 transition-all"><i data-lucide="log-in" class="w-4 h-4"></i> Login</button>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobileToggle" aria-label="Open menu" class="p-2 rounded-md bg-gray-100">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <section class="text-center fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold flex justify-center items-center gap-2">
+        Welcome to Sentinel-X EduTools 🎓
+      </h1>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Your all-in-one hub for documentation, updates, registration, and subscription management for Sentinel-X learning modules. 
+        <span class="text-teal-600 font-semibold">Empowering smart learning across Africa 🌍</span>
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="documentation.html" class="px-5 py-3 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-lg shadow-lg hover:scale-105 transition flex items-center gap-2"><i data-lucide="book" class="w-5 h-5"></i>Documentation</a>
+        <a href="registrations.html" class="px-5 py-3 border rounded-lg text-sm hover:bg-teal-50 flex items-center gap-2"><i data-lucide="user-plus" class="w-5 h-5"></i>Register</a>
+        <a href="subscription-billing.html" class="px-5 py-3 border rounded-lg text-sm hover:bg-teal-50 flex items-center gap-2"><i data-lucide="dollar-sign" class="w-5 h-5"></i>Billing</a>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="mt-20 fade-up">
+      <h2 class="text-3xl font-semibold text-center flex justify-center items-center gap-2">
+        <i data-lucide="wallet" class="w-6 h-6 text-teal-600"></i> Pricing Plans 💰
+      </h2>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div class="bg-white card rounded-xl p-6 hover:scale-105 transition">
+          <h3 class="font-semibold flex items-center gap-2"><i data-lucide="star" class="w-5 h-5 text-yellow-500"></i> Starter Plan</h3>
+          <p class="text-sm text-gray-600 mt-2">$3.00 lifetime for basic access 🧠</p>
+        </div>
+        <div class="bg-white card rounded-xl p-6 hover:scale-105 transition">
+          <h3 class="font-semibold flex items-center gap-2"><i data-lucide="crown" class="w-5 h-5 text-purple-500"></i> Premium Plan</h3>
+          <p class="text-sm text-gray-600 mt-2">$5.00 monthly for premium access ⚡</p>
+        </div>
+        <div class="bg-white card rounded-xl p-6 hover:scale-105 transition">
+          <h3 class="font-semibold flex items-center gap-2"><i data-lucide="school" class="w-5 h-5 text-green-600"></i> ≤100 Students</h3>
+          <p class="text-sm text-gray-600 mt-2">$2.50 per student per term 🏫</p>
+        </div>
+        <div class="bg-white card rounded-xl p-6 hover:scale-105 transition">
+          <h3 class="font-semibold flex items-center gap-2"><i data-lucide="users" class="w-5 h-5 text-cyan-600"></i> 101–400 Students</h3>
+          <p class="text-sm text-gray-600 mt-2">$2.00 per student per term 🏫</p>
+        </div>
+        <div class="bg-white card rounded-xl p-6 hover:scale-105 transition">
+          <h3 class="font-semibold flex items-center gap-2"><i data-lucide="users" class="w-5 h-5 text-emerald-600"></i> 401–1000 Students</h3>
+          <p class="text-sm text-gray-600 mt-2">$1.85 per student per term 🏫</p>
+        </div>
+        <div class="bg-white card rounded-xl p-6 hover:scale-105 transition">
+          <h3 class="font-semibold flex items-center gap-2"><i data-lucide="building" class="w-5 h-5 text-teal-600"></i> 1001–1500 Students</h3>
+          <p class="text-sm text-gray-600 mt-2">$1.50 per student per term 🏫</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPLOAD FORM -->
+    <section id="upload" class="mt-20 bg-white card rounded-xl p-6 fade-up">
+      <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="upload-cloud" class="w-6 h-6 text-teal-600"></i> Upload Documentation 📄</h2>
+      <p class="text-sm text-gray-600 mt-1">Admins can upload documents or updates directly to the Sentinel-X team.</p>
+      <form action="https://formsubmit.co/sentinelxedutools@gmail.com" method="POST" enctype="multipart/form-data" class="mt-4 space-y-4">
+        <input type="hidden" name="_captcha" value="false">
+        <div>
+          <label class="text-sm">Title</label>
+          <input type="text" name="title" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Document Title">
+        </div>
+        <div>
+          <label class="text-sm">Description</label>
+          <textarea name="description" rows="3" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Brief description"></textarea>
+        </div>
+        <div>
+          <label class="text-sm">File</label>
+          <input type="file" name="attachment" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" required class="w-full mt-1">
+        </div>
+        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-md flex items-center gap-2 hover:scale-105 transition">
+          <i data-lucide="send" class="w-5 h-5"></i> Upload
+        </button>
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-20 bg-white card rounded-xl p-6 fade-up">
+      <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="message-circle" class="w-6 h-6 text-teal-600"></i> Contact & Support 💬</h2>
+      <form action="https://formsubmit.co/sentinelxedutools@gmail.com" method="POST" class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <input type="hidden" name="_captcha" value="false">
+        <input name="name" placeholder="Your name" class="px-3 py-2 border rounded-md" required>
+        <input name="email" type="email" placeholder="Your email" class="px-3 py-2 border rounded-md" required>
+        <input name="subject" placeholder="Subject" class="px-3 py-2 border rounded-md sm:col-span-2" required>
+        <textarea name="message" rows="4" placeholder="Your message" class="px-3 py-2 border rounded-md sm:col-span-2" required></textarea>
+        <button type="submit" class="sm:col-span-2 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-md flex items-center gap-2 transition"><i data-lucide="send" class="w-5 h-5"></i> Send Message</button>
+      </form>
+    </section>
+
+    <footer class="mt-20 text-sm text-gray-600 border-t pt-6 text-center fade-up">
+      © 2025 Sentinel-X Academy. All rights reserved. 🚀
+    </footer>
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EULA | Sentinel-X Academy EduTools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to-br, #f0f2f5, #d0f0f0, #c0f7f7);
+      color: #0d1b2a;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .fade-up {
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      border-bottom: 3px solid #0ea5a4;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo/logo.png" alt="Sentinel-X logo" class="w-10 h-10 rounded-md object-cover shadow-sm animate-bounce">
+        <div>
+          <span class="font-semibold text-lg flex items-center gap-1">Sentinel-X <i data-lucide="rocket" class="w-4 h-4 text-teal-600"></i></span>
+          <div class="text-sm text-gray-500">Academy · EduTools</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
+        <a href="index.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i> Home</a>
+        <a href="documentation.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="book-open" class="w-4 h-4"></i> Docs</a>
+        <a href="registrations.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="edit-3" class="w-4 h-4"></i> Register</a>
+        <a href="subscription-billing.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="credit-card" class="w-4 h-4"></i> Billing</a>
+        <a href="ethics-and-fairuse.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="scale" class="w-4 h-4"></i> Ethics</a>
+        <a href="SLA.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="shield" class="w-4 h-4"></i> SLA</a>
+        <a href="EULA.html" class="text-teal-600 font-semibold flex items-center gap-1"><i data-lucide="file-text" class="w-4 h-4"></i> EULA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-16">
+
+    <!-- HERO -->
+    <section class="text-center fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold flex justify-center items-center gap-2">
+        <i data-lucide="file-text" class="w-6 h-6 text-teal-600"></i> End User License Agreement (EULA) 📄
+      </h1>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        This EULA governs the use of Sentinel-X EduTools by individuals and institutions. Please read carefully before registering or accessing the platform.
+      </p>
+    </section>
+
+    <!-- EULA CONTENT -->
+    <section class="mt-16 space-y-10 fade-up">
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="check-square" class="w-5 h-5 text-teal-500"></i> 1. License Grant</h2>
+        <p class="mt-2 text-gray-700">
+          Sentinel-X Academy grants the user a limited, non-exclusive, non-transferable license to access and use EduTools for personal, educational, or institutional purposes in accordance with this agreement.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="x-square" class="w-5 h-5 text-teal-500"></i> 2. Restrictions</h2>
+        <ul class="mt-2 list-disc list-inside text-gray-700 space-y-1">
+          <li>No reverse engineering, decompiling, or attempting to extract source code.</li>
+          <li>No unauthorized sharing, resale, or distribution of platform materials.</li>
+          <li>Do not use the platform for illegal or commercial purposes without written consent.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="shield" class="w-5 h-5 text-teal-500"></i> 3. User Responsibilities</h2>
+        <ul class="mt-2 list-disc list-inside text-gray-700 space-y-1">
+          <li>Maintain confidentiality of your login credentials.</li>
+          <li>Use the platform ethically and according to Sentinel-X policies.</li>
+          <li>Report any suspected security vulnerabilities immediately to <a href="mailto:sentinelxedutools@gmail.com" class="text-teal-600 hover:underline">sentinelxedutools@gmail.com</a>.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="alert-circle" class="w-5 h-5 text-teal-500"></i> 4. Termination</h2>
+        <p class="mt-2 text-gray-700">
+          Sentinel-X reserves the right to suspend or terminate your access for any violation of this EULA, including unauthorized sharing, illegal activity, or breach of ethical guidelines.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-teal-500"></i> 5. Intellectual Property</h2>
+        <p class="mt-2 text-gray-700">
+          All software, content, logos, and documentation in EduTools are the property of Sentinel-X Systems. Users may not claim ownership or use for purposes outside the scope of this agreement.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="info" class="w-5 h-5 text-teal-500"></i> 6. Limitation of Liability</h2>
+        <p class="mt-2 text-gray-700">
+          Sentinel-X is not liable for any indirect, incidental, or consequential damages arising from the use of EduTools. Liability for direct damages is limited to the value of the subscription or access fee paid.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-teal-500"></i> 7. Agreement Acknowledgment</h2>
+        <p class="mt-2 text-gray-700">
+          By using Sentinel-X EduTools, you acknowledge that you have read, understood, and agreed to this EULA and all related Sentinel-X policies.
+        </p>
+      </div>
+
+    </section>
+
+    <footer class="mt-20 text-sm text-gray-600 border-t pt-6 text-center fade-up">
+      © 2025 Sentinel-X Academy · EduTools. All rights reserved. 🚀
+    </footer>
+
+  </main>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

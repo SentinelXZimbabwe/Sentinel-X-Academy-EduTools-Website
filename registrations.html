@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration — Sentinel-X EduTools</title>
+  <meta name="description" content="Register for Sentinel-X Academy EduTools — official onboarding for beta and institutional access." />
+  <meta name="theme-color" content="#0f172a" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root{--brand:#0ea5a4;--bg:#f8fafc;--muted:#64748b}
+    html,body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+    .card{box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .fade-up{animation:fadeUp 0.8s ease forwards;opacity:0}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-teal-50 to-cyan-50 text-slate-900 leading-relaxed overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo/logo.png" alt="Sentinel-X logo" class="w-10 h-10 rounded-md object-cover shadow-sm">
+        <div>
+          <span class="font-semibold text-lg flex items-center gap-1">Sentinel-X <i data-lucide="rocket" class="w-4 h-4 text-teal-600"></i></span>
+          <div class="text-sm text-gray-500">Academy · EduTools</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
+        <a href="index.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i> Home</a>
+        <a href="documentation.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="book-open" class="w-4 h-4"></i> Docs</a>
+        <a href="registrations.html" class="text-teal-600 font-semibold flex items-center gap-1"><i data-lucide="edit-3" class="w-4 h-4"></i> Register</a>
+        <a href="subscription-billing.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="credit-card" class="w-4 h-4"></i> Billing</a>
+        <a href="ethics-and-fairuse.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="scale" class="w-4 h-4"></i> Ethics</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- REGISTRATION HERO -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <section class="text-center fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold flex justify-center items-center gap-2">
+        Registration Portal 📝
+      </h1>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Register for access to Sentinel-X EduTools learning modules.  
+        Only <strong>100 beta users</strong> are accepted in the first phase — all payments and credentials are handled <strong>offline</strong>.
+      </p>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <section class="mt-20 bg-white card rounded-xl p-6 fade-up">
+      <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="user-plus" class="w-6 h-6 text-teal-600"></i> Registration Form</h2>
+      <p class="text-sm text-gray-600 mt-1">Fill out this form to request access credentials for the EduTools beta.</p>
+
+      <form id="registrationForm" action="https://formsubmit.co/sentinelxedutools@gmail.com" method="POST" class="mt-6 space-y-4">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="total_cost" id="totalCostInput" value="">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="text-sm">Full Name</label>
+            <input type="text" name="full_name" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Enter your name">
+          </div>
+          <div>
+            <label class="text-sm">Email</label>
+            <input type="email" name="email" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="example@email.com">
+          </div>
+          <div>
+            <label class="text-sm">Phone / WhatsApp</label>
+            <input type="text" name="contact" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="+263...">
+          </div>
+          <div>
+            <label class="text-sm">Institution / School (if applicable)</label>
+            <input type="text" name="institution" class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="e.g. Prestige Centre">
+          </div>
+        </div>
+
+        <div>
+          <label class="text-sm">Select Package</label>
+          <select id="packageSelect" name="package" required class="w-full mt-1 px-3 py-2 border rounded-md">
+            <option value="">Select your access plan</option>
+            <option value="Starter Access - $3 lifetime">Starter Access — $3 lifetime 🧠</option>
+            <option value="Premium Access - $5/month">Premium Access — $5/month ⚡</option>
+            <option value="School License ≤100 Students - $2.50/student">School License — ≤100 Students: $2.50/student 🏫</option>
+            <option value="School License 101-400 Students - $2.00/student">School License — 101–400 Students: $2.00/student 🏫</option>
+            <option value="School License 401-1000 Students - $1.85/student">School License — 401–1000 Students: $1.85/student 🏫</option>
+            <option value="School License 1001-1500 Students - $1.50/student">School License — 1001–1500 Students: $1.50/student 🏫</option>
+          </select>
+        </div>
+
+        <!-- Student count input -->
+        <div id="studentCountContainer" style="display:none;" class="mt-2">
+          <label class="text-sm">Number of Students</label>
+          <input type="number" id="studentCount" min="1" class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Enter total number of students">
+          <div id="calculatedCost" class="text-teal-700 font-semibold mt-2"></div>
+        </div>
+
+        <div>
+          <label class="text-sm">Reason for Joining / Area of Study</label>
+          <textarea name="reason" rows="3" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Tell us briefly about your learning goals or area of study"></textarea>
+        </div>
+
+        <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg text-sm text-yellow-700">
+          <i data-lucide="info" class="inline w-4 h-4 mr-1"></i> 
+          Note: Registration does not automatically grant access. Once payment is verified, your unique credentials (username & password) will be issued manually by the Sentinel-X team.
+        </div>
+
+        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-md flex items-center gap-2 hover:scale-105 transition">
+          <i data-lucide="send" class="w-5 h-5"></i> Submit Registration
+        </button>
+      </form>
+    </section>
+
+    <!-- AFTER REGISTRATION INFO -->
+    <section class="mt-20 bg-white card rounded-xl p-6 fade-up">
+      <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="lock" class="w-6 h-6 text-teal-600"></i> What Happens Next 🔐</h2>
+      <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+        <li>You’ll receive an acknowledgment email from Sentinel-X confirming your registration.</li>
+        <li>Proceed to make a **cash payment** based on your selected package.</li>
+        <li>After payment, send proof through the <a href="subscription-billing.html" class="text-teal-600 font-semibold hover:underline">Billing Page</a>.</li>
+        <li>Once verified, you’ll receive your **login credentials** and access link to the EduTools dashboard.</li>
+        <li>Each beta account is valid for the trial duration. You can upgrade later when subscriptions move to online systems.</li>
+      </ul>
+    </section>
+
+    <footer class="mt-20 text-sm text-gray-600 border-t pt-6 text-center fade-up">
+      © 2025 Sentinel-X Academy · EduTools. All rights reserved. 🚀
+    </footer>
+  </main>
+
+  <script>
+    lucide.createIcons();
+
+    const packageSelect = document.getElementById('packageSelect');
+    const studentCountContainer = document.getElementById('studentCountContainer');
+    const studentCountInput = document.getElementById('studentCount');
+    const calculatedCost = document.getElementById('calculatedCost');
+    const totalCostInput = document.getElementById('totalCostInput');
+
+    function updateCost() {
+      const students = parseInt(studentCountInput.value) || 0;
+      const selectedOption = packageSelect.value;
+      let perStudent = 0;
+      let total = 0;
+
+      if(selectedOption.includes("≤100")) perStudent = 2.5;
+      else if(selectedOption.includes("101-400")) perStudent = 2.0;
+      else if(selectedOption.includes("401-1000")) perStudent = 1.85;
+      else if(selectedOption.includes("1001-1500")) perStudent = 1.5;
+
+      if(perStudent > 0) {
+        total = (students * perStudent).toFixed(2);
+        calculatedCost.innerText = `Total Cost: $${total} for ${students} students`;
+        totalCostInput.value = total;
+      } else {
+        calculatedCost.innerText = "";
+        totalCostInput.value = "";
+      }
+    }
+
+    packageSelect.addEventListener('change', () => {
+      if(packageSelect.value.includes("School License")) {
+        studentCountContainer.style.display = "block";
+      } else {
+        studentCountContainer.style.display = "none";
+        calculatedCost.innerText = "";
+        totalCostInput.value = "";
+      }
+      updateCost();
+    });
+
+    studentCountInput.addEventListener('input', updateCost);
+  </script>
+</body>
+</html>
