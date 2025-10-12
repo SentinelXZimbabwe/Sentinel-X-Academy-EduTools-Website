@@ -18,7 +18,7 @@
   </style>
 </head>
 <body class="bg-gradient-to-br from-slate-50 via-teal-50 to-cyan-50 text-slate-900 leading-relaxed overflow-x-hidden">
-  
+
   <!-- HEADER -->
   <header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -30,7 +30,8 @@
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
+      <!-- Desktop Navigation -->
+      <nav id="desktopNav" class="hidden md:flex items-center gap-6 text-sm text-gray-700">
         <a href="documentation.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="book-open" class="w-4 h-4"></i> Docs</a>
         <a href="registrations.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="edit-3" class="w-4 h-4"></i> Register</a>
         <a href="subscription-billing.html" class="hover:text-teal-600 flex items-center gap-1"><i data-lucide="credit-card" class="w-4 h-4"></i> Billing</a>
@@ -40,10 +41,24 @@
         <button onclick="window.location.href='https://sentinelxzimbabwe.github.io/Full-STEM-Package/'" class="ml-2 px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-md text-sm flex items-center gap-1 transition-all"><i data-lucide="log-in" class="w-4 h-4"></i> Login</button>
       </nav>
 
+      <!-- Mobile Hamburger -->
       <div class="md:hidden">
         <button id="mobileToggle" aria-label="Open menu" class="p-2 rounded-md bg-gray-100">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobileNav" class="hidden md:hidden bg-white border-t">
+      <div class="flex flex-col px-6 py-4 gap-3">
+        <a href="documentation.html" class="hover:text-teal-600 flex items-center gap-2"><i data-lucide="book-open" class="w-4 h-4"></i> Docs</a>
+        <a href="registrations.html" class="hover:text-teal-600 flex items-center gap-2"><i data-lucide="edit-3" class="w-4 h-4"></i> Register</a>
+        <a href="subscription-billing.html" class="hover:text-teal-600 flex items-center gap-2"><i data-lucide="credit-card" class="w-4 h-4"></i> Billing</a>
+        <a href="SLA.html" class="hover:text-teal-600 flex items-center gap-2"><i data-lucide="shield" class="w-4 h-4"></i> SLA</a>
+        <a href="EULA.html" class="hover:text-teal-600 flex items-center gap-2"><i data-lucide="file-text" class="w-4 h-4"></i> EULA</a>
+        <a href="ethics-and-fairuse.html" class="hover:text-teal-600 flex items-center gap-2"><i data-lucide="scale" class="w-4 h-4"></i> Ethics</a>
+        <button onclick="window.location.href='https://sentinelxzimbabwe.github.io/Full-STEM-Package/'" class="px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-md text-sm flex items-center gap-2 transition-all"><i data-lucide="log-in" class="w-4 h-4"></i> Login</button>
       </div>
     </div>
   </header>
@@ -70,7 +85,7 @@
       <h2 class="text-3xl font-semibold text-center flex justify-center items-center gap-2">
         <i data-lucide="wallet" class="w-6 h-6 text-teal-600"></i> Pricing Plans 💰
       </h2>
-      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <div class="bg-white card rounded-xl p-6 hover:scale-105 transition">
           <h3 class="font-semibold flex items-center gap-2"><i data-lucide="star" class="w-5 h-5 text-yellow-500"></i> Starter Plan</h3>
           <p class="text-sm text-gray-600 mt-2">$3.00 lifetime for basic access 🧠</p>
@@ -98,30 +113,6 @@
       </div>
     </section>
 
-    <!-- UPLOAD FORM -->
-    <section id="upload" class="mt-20 bg-white card rounded-xl p-6 fade-up">
-      <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="upload-cloud" class="w-6 h-6 text-teal-600"></i> Upload Documentation 📄</h2>
-      <p class="text-sm text-gray-600 mt-1">Admins can upload documents or updates directly to the Sentinel-X team.</p>
-      <form action="https://formsubmit.co/sentinelxedutools@gmail.com" method="POST" enctype="multipart/form-data" class="mt-4 space-y-4">
-        <input type="hidden" name="_captcha" value="false">
-        <div>
-          <label class="text-sm">Title</label>
-          <input type="text" name="title" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Document Title">
-        </div>
-        <div>
-          <label class="text-sm">Description</label>
-          <textarea name="description" rows="3" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Brief description"></textarea>
-        </div>
-        <div>
-          <label class="text-sm">File</label>
-          <input type="file" name="attachment" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" required class="w-full mt-1">
-        </div>
-        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-md flex items-center gap-2 hover:scale-105 transition">
-          <i data-lucide="send" class="w-5 h-5"></i> Upload
-        </button>
-      </form>
-    </section>
-
     <!-- CONTACT -->
     <section id="contact" class="mt-20 bg-white card rounded-xl p-6 fade-up">
       <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="message-circle" class="w-6 h-6 text-teal-600"></i> Contact & Support 💬</h2>
@@ -142,6 +133,14 @@
 
   <script>
     lucide.createIcons();
+
+    // Mobile menu toggle
+    const toggleButton = document.getElementById('mobileToggle');
+    const mobileNav = document.getElementById('mobileNav');
+
+    toggleButton.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
   </script>
 </body>
 </html>
