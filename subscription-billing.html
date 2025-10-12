@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Billing & Subscriptions — Sentinel-X EduTools</title>
-  <meta name="description" content="Manage Sentinel-X Academy EduTools subscriptions, view pricing, and submit payment confirmations." />
+  <meta name="description" content="View Sentinel-X EduTools pricing, subscription plans, and credential information." />
   <meta name="theme-color" content="#0f172a" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -41,20 +41,23 @@
 
   <!-- BILLING HERO -->
   <main class="max-w-7xl mx-auto px-6 py-16">
+
     <section class="text-center fade-up">
       <h1 class="text-4xl md:text-5xl font-extrabold flex justify-center items-center gap-2">
         Billing & Subscriptions 💳
       </h1>
       <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-        Manage your Sentinel-X EduTools access. Payments are made **offline** (cash or direct) during the beta phase.
-        Only registered users can activate access using their unique credentials.
+        Manage your Sentinel-X EduTools access. Payments are made <strong>offline</strong> (cash or direct) during the beta phase.
+        Each user receives a <strong>unique login</strong> that must be protected. Institutions receive unique IDs equal to the number of students registered.
       </p>
       <div class="mt-6 flex flex-wrap justify-center gap-4">
-        <a href="registrations.html" class="px-5 py-3 border rounded-lg hover:bg-teal-50 flex items-center gap-2"><i data-lucide="edit-3" class="w-5 h-5"></i> Go to Registration</a>
+        <a href="registrations.html" class="px-5 py-3 border rounded-lg hover:bg-teal-50 flex items-center gap-2">
+          <i data-lucide="edit-3" class="w-5 h-5"></i> Go to Registration
+        </a>
       </div>
     </section>
 
-    <!-- PRICING PLANS -->
+    <!-- SUBSCRIPTION PLANS -->
     <section id="plans" class="mt-20 fade-up">
       <h2 class="text-3xl font-semibold text-center flex justify-center items-center gap-2">
         <i data-lucide="wallet" class="w-6 h-6 text-teal-600"></i> Subscription Plans
@@ -89,44 +92,19 @@
       </div>
     </section>
 
-    <!-- PAYMENT INSTRUCTIONS -->
+    <!-- CREDENTIAL MANAGEMENT INFO -->
     <section class="mt-20 bg-white card rounded-xl p-6 fade-up">
-      <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="cash" class="w-6 h-6 text-teal-600"></i> Payment Instructions 🏦</h2>
+      <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="shield" class="w-6 h-6 text-teal-600"></i> Account Credentials 🔑</h2>
       <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
-        <li>Currently, <strong>no online payments</strong> are accepted during the beta phase.</li>
-        <li>Payments are collected in cash by the Sentinel-X team or authorized agents.</li>
-        <li>After payment, you’ll receive your <strong>username and password</strong> for beta access.</li>
-        <li>Each account is verified manually before activation.</li>
-        <li>Once we migrate to the secure database, all credentials will be reset and encrypted.</li>
+        <li>Each individual receives a <strong>unique login</strong> for accessing EduTools.</li>
+        <li>Institutions receive unique IDs corresponding to the number of students registered.</li>
+        <li>Credentials must be kept secure; do <strong>not share</strong> with anyone.</li>
+        <li>If credentials are lost, they must be reset manually by Sentinel-X administrators.</li>
+        <li>All accounts are verified manually before activation.</li>
       </ul>
       <div class="mt-4 bg-yellow-50 border border-yellow-200 p-4 rounded-lg text-sm text-yellow-700">
-        <i data-lucide="alert-circle" class="inline w-4 h-4 mr-1"></i> Keep your payment receipt or reference ID — it’s required for verification.
+        <i data-lucide="alert-circle" class="inline w-4 h-4 mr-1"></i> Protect your credentials — access will be disabled if shared or compromised.
       </div>
-    </section>
-
-    <!-- PAYMENT CONFIRMATION FORM -->
-    <section class="mt-20 bg-white card rounded-xl p-6 fade-up">
-      <h2 class="text-2xl font-semibold flex items-center gap-2"><i data-lucide="check-circle" class="w-6 h-6 text-teal-600"></i> Payment Verification 🔐</h2>
-      <p class="text-sm text-gray-600 mt-1">Submit your payment proof or confirmation for account activation.</p>
-
-      <form action="https://formsubmit.co/sentinelxedutools@gmail.com" method="POST" enctype="multipart/form-data" class="mt-4 space-y-4">
-        <input type="hidden" name="_captcha" value="false">
-        <div>
-          <label class="text-sm">Full Name</label>
-          <input type="text" name="full_name" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Enter your full name">
-        </div>
-        <div>
-          <label class="text-sm">Email or Contact</label>
-          <input type="text" name="email_or_contact" required class="w-full mt-1 px-3 py-2 border rounded-md" placeholder="Email or WhatsApp number">
-        </div>
-        <div>
-          <label class="text-sm">Upload Proof of Payment (if available)</label>
-          <input type="file" name="payment_proof" accept=".jpg,.jpeg,.png,.pdf" class="w-full mt-1">
-        </div>
-        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-md flex items-center gap-2 hover:scale-105 transition">
-          <i data-lucide="send" class="w-5 h-5"></i> Submit Verification
-        </button>
-      </form>
     </section>
 
     <footer class="mt-20 text-sm text-gray-600 border-t pt-6 text-center fade-up">
